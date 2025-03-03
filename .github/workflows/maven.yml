@@ -36,5 +36,5 @@ jobs:
         
     - name: Upload to S3
       run: |
-        aws s3 cp todo-app.zip s3://week3lab-java-jar/week3lab-0.0.1-SNAPSHOT.zip-${{ github.sha }}.zip
+        aws s3 cp week3lab-0.0.1-SNAPSHOT.zip s3://week3lab-java-jar/week3lab-0.0.1-SNAPSHOT.zip-${{ github.sha }}.zip
         echo "S3 URL: s3://week3lab-java-jar/week3lab-0.0.1-SNAPSHOT.zip-${{ github.sha }}.zip"
